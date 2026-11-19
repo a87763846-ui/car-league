@@ -1,0 +1,25 @@
+car-league/
+├── frontend/           # React + Three.js application
+│   ├── src/
+│   │   ├── components/ # UI components
+│   │   ├── game/       # Game-specific components and rendering
+│   │   ├── routes/     # Application routes
+│   │   └── state/      # State management
+│   └── public/         # Static assets
+│
+├── backend/            # Cloudflare Workers + Durable Objects
+│   └── src/
+│       ├── game/       # Server-side game logic
+│       └── ws.ts       # WebSocket handling
+│
+├── game/               # Shared game logic and physics
+│   └── src/
+│       ├── arena/      # Arena-related code
+│       ├── ball/       # Ball-related code
+│       ├── car/        # Car-related code
+│       ├── wheel/      # Wheel-related code
+│       └── world/      # Physics world code
+│
+└── common/             # Shared types and utilities
+    └── src/
+        └── common.ts   # Common types and utilities
